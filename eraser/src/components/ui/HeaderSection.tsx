@@ -1,3 +1,4 @@
+import { LoginLink, RegisterLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import React from "react";
 
 const HeaderSection = () => {
@@ -38,7 +39,7 @@ const HeaderSection = () => {
             text-white transition "
            
           >
-            Login
+            <LoginLink postLoginRedirectURL="/dashboard">Login</LoginLink>
           </div>
 
           <div
@@ -48,7 +49,7 @@ const HeaderSection = () => {
               hover:text-slate-800 sm:block"
            
           >
-          Register 
+          <RegisterLink>register</RegisterLink> 
           </div>
         </div>
 

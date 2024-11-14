@@ -1,9 +1,15 @@
+import { Button } from '@/components/ui/button'
+import { LogoutLink } from '@kinde-oss/kinde-auth-nextjs/components'
 import React from 'react'
 
-const dashboard = () => {
+const Dashboard = () => {
   return (
-    <div>dashboard</div>
+    <div>
+        <Button variant={'destructive'}>
+            <LogoutLink>Logout</LogoutLink>
+        </Button>
+    </div>
   )
 }
 
-export default dashboard
+export default Dashboard
